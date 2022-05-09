@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/symptomLevelRating"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SymptomActivity">
+
+    <TextView
+        android:id="@+id/textViewLoggingPage"
+        android:layout_width="171dp"
+        android:layout_height="34dp"
+        android:text="Symptom Logging Page"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <Spinner
+        android:id="@+id/spinnerSymptomList"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoggingPage" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="238dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSymptomList"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <Button
+        android:id="@+id/buttonUploadSymptoms"
+        android:layout_width="251dp"
+        android:layout_height="111dp"
+        android:onClick="onClickUploadSymptoms"
+        android:text="UPLOAD SYMPTOMS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        app:layout_constraintVertical_bias="0.779" />
+</androidx.constraintlayout.widget.ConstraintLayout>
